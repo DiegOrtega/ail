@@ -13,40 +13,44 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.get("/tienda-home", function(request,response){
-   response.render("pages/ecommerce"); 
+app.get("/index", function(request,response){
+   response.render("pages/home"); 
 });
 
-app.get("/agencia", function(request, response){
-   response.render("pages/agency") 
+app.get("/404", function(request, response){
+   response.render("pages/404") 
 });
 
-app.get("/blog-simple", function(request, response){
-   response.render("pages/blog-simple") 
+app.get("/blog-single", function(request, response){
+   response.render("pages/blog-single") 
+});
+
+app.get("/cart", function(request, response){
+   response.render("pages/cart") 
+});
+
+app.get("/checkout", function(request, response){
+   response.render("pages/checkout") 
+});
+
+app.get("/contact-us", function(request, response){
+   response.render("pages/contact-us") 
+});
+
+app.get("/login", function(request, response){
+   response.render("pages/login") 
+});
+
+app.get("/product-details", function(request, response){
+   response.render("pages/product-details") 
+});
+
+app.get("/shop", function(request, response){
+   response.render("pages/shop") 
 });
 
 app.get("/blog", function(request, response){
    response.render("pages/blog") 
-});
-
-app.get("/sitio-marketing", function(request, response){
-   response.render("pages/marketing-site") 
-});
-
-app.get("/noticias", function(request, response){
-   response.render("pages/news-magazine") 
-});
-
-app.get("/portafolio", function(request, response){
-   response.render("pages/portfolio") 
-});
-
-app.get("/pagina-producto", function(request, response){
-   response.render("pages/product-page") 
-});
-
-app.get("/real-estate", function(request, response){
-   response.render("pages/real-estate") 
 });
 
 app.listen(app.get('port'), function() {
